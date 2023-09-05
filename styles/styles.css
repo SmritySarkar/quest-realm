@@ -26,7 +26,7 @@
     font-weight: 500;
 }
 .btn-primary{
-    background-color:#FF42A5;
+    background-color:#c91d87;
     padding: 21px 40px;
     border-radius: 48px;
     border:none;
@@ -36,6 +36,26 @@
 }
 #blue-color{
     background-color: #4EC5F7;
+}
+.pink-color{
+    background-color: #FF42A5;
+}
+.purple-color{
+    color:#ac58f1;
+}
+.right-text{
+    text-align:right;
+}
+.section-title{
+    text-align:right;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom:24px;
+}
+.section-description{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 /* Header Section Styles  */
 .header{
@@ -55,6 +75,7 @@ nav .game-logo{
     margin-top:40px;
     margin-left:200px;
     align-items: center;
+    margin-bottom:20px;
 }
 nav ul{
     display:flex;
@@ -64,11 +85,12 @@ nav ul{
 nav ul> li{
     list-style: none;
 }
-nav > ul .social-logo > ul{
+nav > ul .social-logo {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     display:flex;
-    justify-content:space-evenly;
+    gap:20px;
+    align-items: center;
     margin:30px 150px 30px 0px;
     padding:10px 25px 10px 25px;
 }
@@ -121,10 +143,54 @@ nav > ul .social-logo > ul{
 .banner-img{
     max-width:700px;
 }
+/* Main Section Styles */
+/* Quester Section */
+.quester{
+    display:flex;
+    justify-content: space-evenly;
+    gap:50px;
+    align-items: center;
+    margin-right:100px;
+    margin-left:100px;
+}
+.quester-img{
+    margin-top:30px;
+}
+
+.quester-content{
+    justify-content:center;
+    align-items:center;
+    margin-top:80px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:20px;
+}
+.quester-content .special-paragraph{
+    text-align:right;
+    margin-top:24px;
+}
+.btn-right{
+    margin-top:30px;
+    text-align:right;
+}
+
+#purpose{
+    color: #534C64;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#unleash{
+    text-align:left;
+    color: #534C64;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
 
 /* Responsive Media Query Styles */
 @media screen and (max-width:576px) {
-    nav
+    nav, .quester
      {
         flex-direction:column;
     }
@@ -140,7 +206,7 @@ nav > ul .social-logo > ul{
         margin-left:auto;
         margin-right:auto;
     }
-    nav > ul .social-logo > ul{
+    nav > ul .social-logo {
         margin-right:0px;
     }
     .banner-content{
@@ -149,4 +215,21 @@ nav > ul .social-logo > ul{
     .banner-img{
         max-width:350px;
     }
+    .quester-img{
+      width:400px;
+      margin-top:50px;
+    }
+    .quester-img > img{
+        width:100%;
+    }
+    .quester-content{
+        margin-top:20px;
+    }
+    .quester-content >h3,
+    .quester-content .section-title,
+     .quester-content .section-description,
+      .quester-content div, 
+      .quester-content .special-paragraph {
+        text-align:center;
+      }
 }
