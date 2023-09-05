@@ -38,7 +38,7 @@
     background-color: #4EC5F7;
 }
 .pink-color{
-    background-color: #FF42A5;
+    color: #FF42A5;
 }
 .purple-color{
     color:#ac58f1;
@@ -55,6 +55,7 @@
     color: #534C64;
     font-size: 1.1rem;
     font-weight: 400;
+    padding:10px;
 }
 /* Header Section Styles  */
 .header{
@@ -214,12 +215,40 @@ nav > ul .social-logo {
     font-weight: 500;
 }
 
-
+/* Anniversary Section Styles */
+.anniversary-container{
+    display:flex;
+    margin-top:130px;
+   justify-content: space-around;
+}
+.anniversary-content{
+    text-align:right;
+    align-items:center;
+    justify-content:center;
+    margin-top:200px;
+    margin-bottom:auto;
+    
+}
+.anniversary-img .master{
+    height: 60%;
+    margin-left:90px;
+}
+.angela img{
+    border-radius: 8px;
+    border: 0px solid #FFF;
+    width:340px;
+    padding:40px;
+    text-align:center;
+    position:relative;
+    bottom:350px;
+    left:-150px;
+}
 
 /* Responsive Media Query Styles */
 @media screen and (max-width:576px) {
     nav, .quester,
-    .games-container
+    .games-container,
+    .anniversary-container
      {
         flex-direction:column;
     }
@@ -260,5 +289,19 @@ nav > ul .social-logo {
       .quester-content div, 
       .quester-content .special-paragraph {
         text-align:center;
+      }
+      .anniversary-content{
+        margin-top:50px;
+        margin-bottom:50px;
+      }
+      .anniversary-img .master{
+        width:80%;
+        margin-left:70px;
+        margin-right:10px;
+      }
+      .anniversary-img .angela>img{
+        width:200px;
+        bottom:200px;
+        left:-30px;
       }
 }
