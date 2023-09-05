@@ -47,7 +47,6 @@
     text-align:right;
 }
 .section-title{
-    text-align:right;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom:24px;
@@ -187,10 +186,40 @@ nav > ul .social-logo {
     font-weight: 700;
 }
 
+/* Online games Section Styles */
+.online-games{
+    margin-top:100px;
+}
+.online-games >h3, p{
+    text-align:center;
+
+}
+.games-container{
+    margin-top:48px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    gap:20px;
+}
+.games-container .game{
+    text-align:center;
+    padding:10px;
+}
+.games-container .game-title{
+    text-align:start;
+    padding:10px;
+    margin-top:10px;
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
 
 /* Responsive Media Query Styles */
 @media screen and (max-width:576px) {
-    nav, .quester
+    nav, .quester,
+    .games-container
      {
         flex-direction:column;
     }
